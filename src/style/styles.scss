@@ -1,0 +1,74 @@
+@import '../node_modules/@angular/material/theming';
+@import "palette";
+@import "typography";
+@import "material";
+@import "material-components";
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: $secondary-color;
+  @include t5;
+}
+
+.chart-content {
+}
+
+.main-container {
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: center;
+  width: 100%;
+  //flex: 1;
+  margin-top: 16px;
+
+}
+
+.chart-header {
+  @include t2;
+  text-transform: uppercase;
+}
+
+.chart-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  ::ng-deep svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+::ng-deep svg {
+  width: 100%;
+  height: 100%;
+}
+
+.axis {
+  path {
+    stroke: $white-color;
+  }
+  text {
+    fill: $white-color;
+  }
+  .tick text {
+    fill: $white-color;
+  }
+}
+
+.fft {
+  fill: $primary-color;
+}
+
+.max {
+  fill: $primary-color;
+  opacity: 0.25;
+  stroke: $primary-color;
+  stroke-width: 2;
+}

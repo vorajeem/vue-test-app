@@ -1,12 +1,21 @@
 <template>
     <div id="root" class="page-container">
         <md-app>
-            <md-app-toolbar class="md-primary md-dense">
-                <router-link class="md-title" to="/">My App</router-link>
+            <md-app-toolbar class="md-accent md-dense">
+                <router-link class="md-title" to="/">Inspecta Mk III</router-link>
+        <div>
+            
+          <md-tabs class="md-transparent">
+            <md-tab id="tab-mimic" md-label="Mimic"></md-tab>
+            <md-tab id="tab-trend" md-label="Trend"></md-tab>
+            <md-tab id="tab-spectrum" md-label="Spectrum"></md-tab>
+            <md-tab id="tab-dashboard" md-label="Dashboard"></md-tab>
+            <md-tab id="tab-overview" md-label="Overview"></md-tab>
+          </md-tabs>
+        </div>
 
                 <span v-show="username">{{username}}</span>
-
-                <div v-show="signed_in">
+                        <div v-show="signed_in">
                     <md-menu md-direction="bottom-start">
                         <md-button class="md-icon-button" md-menu-trigger>
                             <md-icon>more_vert</md-icon>
@@ -17,9 +26,31 @@
                         </md-menu-content>
                     </md-menu>
                 </div>
+
             </md-app-toolbar>
 
+
+
             <md-app-content id="content">
+
+            <nav md-tab-nav-bar>
+                <a md-tab-link >hi</a>
+                <a md-tab-link >hi</a>
+            </nav>
+            <router-link to="/mimic">
+            <md-button>Mimic</md-button></router-link>
+            <router-link to="/spectrum">
+            <md-button>Spectrum</md-button>
+            </router-link>
+            <router-link to="/trend">
+            <md-button>Trend</md-button>
+            </router-link>
+            <router-link to="/"> 
+            <md-button>Dashboard</md-button>
+            </router-link>
+            <router-link to="/overview">
+            <md-button>Unit overview</md-button>
+            </router-link>
                 <router-view></router-view>
             </md-app-content>
         </md-app>

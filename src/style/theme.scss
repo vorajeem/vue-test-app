@@ -1,13 +1,48 @@
 @import "~vue-material/dist/theme/engine";
 
 @include md-register-theme("default", (
-  primary: md-get-palette-color(blue, A200),
-  accent: md-get-palette-color(red, A200)
+  // primary: md-get-palette-color(blue, A200),
+  // accent: md-get-palette-color(red, A200),
+  primary: #14B5EB,
+  // secondary: #0b101d,
+  accent: #0b101d,
+  tertiary: #242c40,
+  positive-color: #20c45c,
+  caution-color: #fac750,
+  alarm-color: #181314,
+  alarmlightcolor: #f04f6a,
+  white-color: #ffffff
 ));
 
+md-app-toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-content: space-between;
+  align-items: flex-end;
+  height: 58px;
+  padding: 0 0 0 0;
+  margin: 0;
+  // background-color: var(alarmlightcolor);
+  border-style: none;
+  // .mat-tab-list {
+  //   display: flex;
+  //   justify-content: center;
+  // }
+}
+
+// #tab-mimic {
+  // background-color: var(alarmlightcolor);
+// }
 //redefine .md-error for whole app
 .md-error {
     @include md-theme-property-by-hue(color, red, A400, field, error);
 }
 
 @import "~vue-material/dist/theme/all";
+// @import "../../../"
+// @import '../../node_modules/@angular/material/theming';
+// @import "palette";
+// @import "typography";
+// @import "material";
+// @import "material-components";
