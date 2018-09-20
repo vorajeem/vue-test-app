@@ -1,22 +1,18 @@
 <template lang="html">
 
-  <section class="trendcomponent">
-    <h1>trendcomponent Component</h1>
-    <trendgraph></trendgraph>
+  <section class="trendgraph">
+    <h1>trendgraph Component</h1>
   </section>
 
 </template>
 
 <script lang="js">
-import trendgraph from "../components/trendgraph.vue"
+
   export default  {
-    name: 'trendcomponent',
+    name: 'trendgraph',
     props: [],
     mounted() {
 
-    },
-    components: {
-      trendgraph
     },
     data() {
       return {
@@ -33,7 +29,7 @@ import trendgraph from "../components/trendgraph.vue"
 </script>
 
 <style scoped lang="scss">
-  // .trendcomponent {
+  .trendgraph {
 
-  // }
+  }
 </style>

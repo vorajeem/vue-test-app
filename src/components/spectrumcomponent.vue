@@ -2,16 +2,22 @@
 
   <section class="spectrumcomponent">
     <h1>spectrumcomponent Component</h1>
+    <spectrumgraph></spectrumgraph>
   </section>
 
 </template>
 
 <script lang="js">
+import spectrumgraph from "../components/spectrumgraph.vue"
+
   export default  {
     name: 'spectrumcomponent',
     props: [],
     mounted() {
 
+    },
+    components: {
+      spectrumgraph
     },
     data() {
       return {
@@ -28,7 +34,7 @@
 </script>
 
 <style scoped lang="scss">
-  .spectrumcomponent {
+  // .spectrumcomponent {
 
-  }
+  // }
 </style>

@@ -45,7 +45,7 @@
             <router-link to="/trend">
             <md-button>Trend</md-button>
             </router-link>
-            <router-link to="/"> 
+            <router-link to="/dashboard"> 
             <md-button>Dashboard</md-button>
             </router-link>
             <router-link to="/overview">

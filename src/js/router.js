@@ -9,6 +9,7 @@ import mimiccomponent from "../components/mimiccomponent.vue"
 import spectrumcomponent from "../components/spectrumcomponent.vue"
 import unitoverviewcomponent from "../components/unitoverviewcomponent.vue"
 import trendcomponent from "../components/trendcomponent.vue"
+import dashboard from "../components/dashboard.vue"
 
 const router = new VueRouter({
     routes: [
@@ -16,7 +17,8 @@ const router = new VueRouter({
         {name: "mimic", path: "/mimic", component: mimiccomponent},
         {name: "spectrum", path: "/spectrum", component: spectrumcomponent},
         {name: "unitoverview", path: "/overview", component: unitoverviewcomponent},
-        {name: "trend", path: "/trend", component:trendcomponent},
+        {name: "trend", path: "/trend", component: trendcomponent},
+        {name: "dashboard", path: "/dashboard", component: dashboard},
         {name: "content", path: "/", component: AppContent},
         {path: "*", redirect: {name: "content"}}
     ]
