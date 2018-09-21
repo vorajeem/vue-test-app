@@ -2,6 +2,7 @@ import "vue-material/dist/vue-material.css"
 import "./style/theme.scss"
 import "./style/app.styl"
 import "vue-material/dist/theme/default-dark.css"
+import "./style/my_theme.scss"
 // import Router from "vue-router"
 
 // default, default-dark,black-green-light,black-green-dark
